@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby 
+
+require_relative '../config/environment'
+
+author1 = Author.new("Noah Mwangi")
+magazine1 = Magazine.new("Live and Learn", "Programming")
+author2 = Author.new("John Grisham")
+magazine2 = Magazine.new("Who Killed Ruby?", "Technology")
+author3 = Author.new("Murunga School")
+
+
+
+
+author1.add_article(magazine1, "Coding Time")
+author1.add_article(magazine2, "Main Suspect, Python!")
+author2.add_article(magazine1, "Enter SQL")
+author2.add_article(magazine2, "Was Python following Script?")
+author2.add_article(magazine2, "Update, Ruby was out for Java")
+author3.add_article(magazine1, "A walk in Computer Languages")
+author3.add_article(magazine2, "Python available but not Java?")
+
+
+puts author1.name
+puts author2.name
+puts author3.name
+
+puts magazine1.article_titles
+puts magazine1.name
+
+puts article1.title
+puts article1.author.name
+
+puts author1.articles.map { |article| article.title }
+
