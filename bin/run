@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby 
 
-require_relative '../config/environment'
-
+require_relative '../config/environment.rb';
 author1 = Author.new("Noah Mwangi")
 magazine1 = Magazine.new("Live and Learn", "Programming")
 author2 = Author.new("John Grisham")
@@ -31,4 +30,3 @@ puts article1.title
 puts article1.author.name
 
 puts author1.articles.map { |article| article.title }
-
